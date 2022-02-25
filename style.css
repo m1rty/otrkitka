@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    height: 100vh;
+    background-image: url(img/kamo-fon.jpg);
+    background-size: cover;
+    color: cyan;
+}
+.content__wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 700px;
+    height: 100vh;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.content__zvezda{
+    animation: 3s alternate infinite zvezda;
+    width: 700px;
+    height: 100%;
+    -webkit-animation: 3s alternate infinite zvezda;
+}
+.content__title{
+    color: rgb(81, 144, 228);
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+.content__tank{
+    width: 500px;
+    animation: 2s tank alternate infinite;
+    -webkit-animation: 1s tank alternate infinite;
+}
+.content__img-tank{
+    position: absolute;
+    bottom: 0;
+}
+@keyframes tank{
+    from{
+
+    }
+    to{
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+}
+}
+@keyframes zvezda{
+    from{
+
+    }
+    to{
+        transform: translateY(-70px);
+        -webkit-transform: translateY(-70px);
+        -moz-transform: translateY(-70px);
+        -ms-transform: translateY(-70px);
+        -o-transform: translateY(-70px);
+}
+}
